@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Project Template</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="manifest" href="mainfest.json">
+	
+	<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+	<meta name="theme-color" content="#000000" />
+	
+	
+	</head>
+
+
+<body onLoad="initialize()">
+	
+	<div id="countdown">
+	</div>
+	
+	
+	
+	
+	<div id="lightbox" onclick="closeLightBox()">
+		<div id="message">This is a message</div>
+	</div>
+		
+	<h2>Fawlty Towers Quiz</h2>
+	<p>The goal is to get as many correct answers as you can. The word "score" is displayed in the bottom right corner, but when you answer your first question, it will be replaced with your score out of 15. To complete this quiz, select an answer from the four options (a through d) by clicking. If the answer is correct, then you get to move to the next page. If not, you'll stay where you are until you get the right answer, or until your 20 seconds run out. If you're having trouble, click the Lifeline to help you narrow things down. Still stuck? Click the "Next Question" button to skip ahead. All of these steps apply for each question. Good luck!</p>
+
+	
+	<div class="grid-container"> 
+	  <div class="header">
+		<div id="question">The Question</div>
+	  </div>
+	  
+	 
+	  
+	  
+	  
+	  <div class="left">
+		<div>
+		
+		 <div class="options" id="a" >A.</div>
+		 <div class="options" id="b" >B.</div>
+		 <div class="options" id="c" >C.</div>
+		 <div class="options" id="d" >D.</div>
+		</div>
+	  </div> 
+
+	  
+	  <div class="right"> <img id="image" src="quizimages/q1.jpg" alt="filler image"></div>
+	  
+	  <div class="footer1" id="nextQuestion" onclick="nextQuestion()">
+		<p>Next Question</p>
+	  </div>
+	  
+	  <div class="footer2" id="score">
+		<p>Score</p>
+	  </div>
+	  
+	  <div class="bottom" id="lifeLine" onclick="activateLifeline()">
+		<div id="messages">Lifeline</div>
+	</div>
+	  
+	</div>
+	
+
+	</body>
+</html>
+
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/fjstudio" title="fjstudio">fjstudio</a> from <a href="https://www.flaticon.com    -->
